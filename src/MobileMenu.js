@@ -10,26 +10,28 @@ const MobileMenu = () => {
   if (displayMenu) {
     menu = <div className="navbar">
       <ul className="nav-links">
-      <li>
+      <li className="links">
         Home
       </li>
-      <li>
+      <li className="links">
         Careers
       </li>
-      <li>
+      <li className="links">
         About us
       </li>
     </ul>
     </div>
   }
   return (
-    <nav className="nav">
-      <h2 className="logo">Welcome to home page</h2>
-      <div className="menu-bars">
-        <FontAwesomeIcon icon={faBars} onClick={() => setDisplayMenu(!displayMenu)} />
-      </div>
-      { menu }
-    </nav>
+    <header className="App-header">
+      <nav className="nav">
+        <h2 className="logo">Welcome to home page</h2>
+        <div className="menu-bars">
+          <FontAwesomeIcon icon={faBars} onClick={() => setDisplayMenu(!displayMenu)} />
+        </div>
+        { menu }
+      </nav>
+    </header>
   )
 }
 

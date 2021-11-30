@@ -29,12 +29,6 @@ ol, ul {
   background-color: #000;
 }
 
-.parent-container,
-.burger {
-  display: flex;
-  flex-direction: column;
-}
-
-.burger {
+.svg-inline--fa {
   cursor: pointer;
 }
